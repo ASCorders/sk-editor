@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+body {
+  background-color: #000;
+  font-family: "Lato", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sk-editor-header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  height: 30px;
+}
+.sk-editor-header h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  line-height: 31px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+.editor-wrapper {
+  width: 100%;
+  height: calc(100vh - 30px);
+  display: flex;
+}
+.editor-wrapper .side-bar-acrion {
+  width: 15%;
+  height: 100%;
+}
+.editor-wrapper .side-bar-acrion .file-dir {
+  width: 100%;
+}
+.editor-wrapper .side-bar-acrion .file-dir .dir-head {
+  width: 100%;
+  background-color: #424242;
+  padding: 2px 5px;
+  position: relative;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.editor-wrapper .side-bar-acrion .file-dir .dir-head h4 {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.editor-wrapper .side-bar-acrion .file-dir .dir-head .arrow-down {
+  width: 15px;
+  filter: invert(1);
+  opacity: 0.7;
+}
+.editor-wrapper .side-bar-acrion .file-dir .dir-head .dir-action {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+  z-index: 1;
+  text-align: right;
+  background-color: #424242;
+}
+.editor-wrapper .side-bar-acrion .file-dir .dir-head .dir-action button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  margin-right: 5px;
+  outline: none;
+}
+.editor-wrapper .side-bar-acrion .file-dir .dir-head .dir-action button:last-child {
+  margin-right: 0px;
+}
+.editor-wrapper .side-bar-acrion .file-dir .dir-head .dir-action img {
+  width: auto;
+  width: 15px;
+  filter: invert(1);
+  opacity: 0.7;
+}
+.editor-wrapper .side-bar-acrion .file-dir .append-file-form {
+  width: 100%;
+}
+.editor-wrapper .side-bar-acrion .file-dir .append-file-form .form-content-wrapper {
+  width: 100%;
+  display: flex;
+  padding-left: 5px;
+  color: #fff;
+}
+.editor-wrapper .side-bar-acrion .file-dir .append-file-form .form-content-wrapper input {
+  width: 100%;
+  margin-left: 5px;
+  background: rgba(255, 255, 255, 0.1019607843);
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 3px 0;
+}
+.editor-wrapper .side-bar-acrion .file-dir .append-file-form .editor-tab-list {
+  width: 100%;
+  list-style: none;
+  overflow: auto;
+}
+.editor-wrapper .side-bar-acrion .file-dir .append-file-form .editor-tab-list .nav-item {
+  width: 100%;
+}
+.editor-wrapper .side-bar-acrion .file-dir .append-file-form .editor-tab-list .nav-item button {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1019607843);
+  border: none;
+  padding: 4px 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  font-size: 14px;
+  border-bottom: 1px solid #424242;
+}
+.editor-wrapper .editor-file-wrapper {
+  width: 85%;
+  padding: 10px;
+  height: 100%;
+  border-left: 2px solid rgba(255, 255, 255, 0.1019607843);
+}
+.editor-wrapper .editor-file-wrapper .editor-content-wrapper {
+  width: 100%;
+}
+.editor-wrapper .editor-file-wrapper .editor-content-wrapper .editor-content {
+  width: 100%;
+  height: 100%;
+  background-color: greenyellow;
+  text-align: center;
+  padding: 50px;
+}
+.editor-wrapper .editor-file-wrapper .editor-content-wrapper .editor-content h5 {
+  font-size: 25px;
+  color: #fff;
+}
+
+.basic-icon {
+  width: 15px;
+  filter: invert(1);
+  opacity: 0.7;
+}
+.basic-icon.none {
+  filter: none;
+  opacity: 1;
+}
+
+.text-ellipsis {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/*# sourceMappingURL=style.css.map */

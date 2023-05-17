@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="sk-editor-header">
+      <h1>Sanjay kumar</h1>
+    </header>
+
+    <section class="editor-wrapper">
+      <aside class="side-bar-acrion">
+        <div class="file-dir">
+          <!-- head action -->
+          <div class="dir-head">
+            <img
+              src="./images/chevron-down.svg"
+              alt="chevron-plus"
+              class="arrow-down"
+            />
+            <h4 class="text-ellipsis">SK Editor</h4>
+            <div class="dir-action">
+              <button class="action-btn" id="add-file-action">
+                <img src="./images/file-plus.svg" alt="file-plus" />
+              </button>
+              <button class="action-btn">
+                <img src="./images/folder-plus.svg" alt="file-plus" />
+              </button>
+            </div>
+          </div>
+
+          <!-- append-file-form -->
+          <div class="append-file-form" id="append-file-form">
+            <ul class="editor-tab-list" id="editor-tab-list" role="tablist">
+              <li class="nav-item" ondblclick="renameFile(this)">
+                <button
+                  class="nav-link"
+                  id="index-tab"
+                  data-bs-target="#index"
+                  type="button"
+                >
+                  <img
+                    src="./images/file.svg"
+                    alt="file-plus"
+                    class="basic-icon"
+                  />
+                  <span class="text-ellipsis" data-file-name="index.js">
+                    index.js</span
+                  >
+                </button>
+              </li>
+              <li class="nav-item" ondblclick="renameFile(this)">
+                <button
+                  class="nav-link"
+                  id="indexjs-tab"
+                  data-bs-target="#indexjs"
+                  type="button"
+                >
+                  <img
+                    src="./images/html-5.png"
+                    alt="file-plus"
+                    class="basic-icon none"
+                  />
+                  <span class="text-ellipsis" data-file-name="index.js">
+                    index.html</span
+                  >
+                </button>
+              </li>
+              <li class="nav-item" ondblclick="renameFile(this)">
+                <button
+                  class="nav-link"
+                  id="css-tab"
+                  data-bs-target="#css"
+                  type="button"
+                >
+                  <img
+                    src="./images/css-3.png"
+                    alt="file-plus"
+                    class="basic-icon none"
+                  />
+                  <span class="text-ellipsis" data-file-name="index.js">
+                    style.css</span
+                  >
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- append-file-form end -->
+        </div>
+      </aside>
+      <section class="editor-file-wrapper">
+        <div class="editor-content-wrapper">
+          <div class="content-header"></div>
+          <div class="editor-content">
+            <h5>1</h5>
+          </div>
+          <div class="editor-content">
+            <h5>2</h5>
+          </div>
+          <div class="editor-content">
+            <h5>3</h5>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/components.js"></script>
+  </body>
+</html>

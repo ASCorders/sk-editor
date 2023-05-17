@@ -1,0 +1,19 @@
+{
+  "name": "code-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run compile:watch",
+    "compile": "sass --watch scss/style.scss css/style.css",
+    "sass:watch": "sass --watch scss/style.scss css/style.css --style expanded"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.62.1"
+  }
+}
