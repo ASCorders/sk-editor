@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="sk-editor-header">
-      <h1>Sanjay kumar</h1>
+      <!-- <h1>Sanjay kumar</h1> -->
     </header>
 
     <section class="editor-wrapper">
@@ -42,6 +42,7 @@
                   id="index-tab"
                   data-bs-target="#index"
                   type="button"
+                  onclick="tabActiveHandel(this)"
                 >
                   <img
                     src="./images/file.svg"
@@ -55,10 +56,11 @@
               </li>
               <li class="nav-item" ondblclick="renameFile(this)">
                 <button
-                  class="nav-link"
+                  class="nav-link active"
                   id="indexjs-tab"
                   data-bs-target="#indexjs"
                   type="button"
+                  onclick="tabActiveHandel(this)"
                 >
                   <img
                     src="./images/html-5.png"
@@ -76,6 +78,7 @@
                   id="css-tab"
                   data-bs-target="#css"
                   type="button"
+                  onclick="tabActiveHandel(this)"
                 >
                   <img
                     src="./images/css-3.png"
@@ -94,14 +97,45 @@
       </aside>
       <section class="editor-file-wrapper">
         <div class="editor-content-wrapper">
-          <div class="content-header"></div>
-          <div class="editor-content">
+          <div class="content-header">
+            <button onclick="tabActiveHandel(this)">
+              <img
+                src="./images/css-3.png"
+                alt="file-plus"
+                class="basic-icon none"
+              />
+              <span class="text-ellipsis" data-file-name="index.js">
+                style.css</span
+              >
+            </button>
+            <button class="active" onclick="tabActiveHandel(this)">
+              <img
+                src="./images/css-3.png"
+                alt="file-plus"
+                class="basic-icon none"
+              />
+              <span class="text-ellipsis" data-file-name="index.js">
+                style.css</span
+              >
+            </button>
+            <button onclick="tabActiveHandel(this)">
+              <img
+                src="./images/css-3.png"
+                alt="file-plus"
+                class="basic-icon none"
+              />
+              <span class="text-ellipsis" data-file-name="index.js">
+                style.css</span
+              >
+            </button>
+          </div>
+          <div class="editor-content" id="index">
             <h5>1</h5>
           </div>
-          <div class="editor-content">
+          <div class="editor-content active" id="css">
             <h5>2</h5>
           </div>
-          <div class="editor-content">
+          <div class="editor-content" id="indexjs">
             <h5>3</h5>
           </div>
         </div>

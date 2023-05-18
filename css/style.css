@@ -122,14 +122,34 @@ body {
   font-size: 14px;
   border-bottom: 1px solid #424242;
 }
+.editor-wrapper .side-bar-acrion .file-dir .append-file-form .editor-tab-list .nav-item button.active {
+  background-color: #424242;
+}
 .editor-wrapper .editor-file-wrapper {
   width: 85%;
-  padding: 10px;
   height: 100%;
   border-left: 2px solid rgba(255, 255, 255, 0.1019607843);
 }
 .editor-wrapper .editor-file-wrapper .editor-content-wrapper {
   width: 100%;
+}
+.editor-wrapper .editor-file-wrapper .editor-content-wrapper .content-header {
+  width: 100%;
+}
+.editor-wrapper .editor-file-wrapper .editor-content-wrapper .content-header button {
+  width: 130px;
+  background: #424242;
+  border: none;
+  padding: 5px 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+.editor-wrapper .editor-file-wrapper .editor-content-wrapper .content-header button.active {
+  background: rgba(255, 255, 255, 0.1019607843);
 }
 .editor-wrapper .editor-file-wrapper .editor-content-wrapper .editor-content {
   width: 100%;
@@ -137,6 +157,10 @@ body {
   background-color: greenyellow;
   text-align: center;
   padding: 50px;
+  display: none;
+}
+.editor-wrapper .editor-file-wrapper .editor-content-wrapper .editor-content.active {
+  display: block;
 }
 .editor-wrapper .editor-file-wrapper .editor-content-wrapper .editor-content h5 {
   font-size: 25px;

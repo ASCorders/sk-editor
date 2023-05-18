@@ -30,9 +30,18 @@ function fileAddHandel(event) {
 function renameFile(el) {
   let oldEL = el;
   console.log("oldEL", oldEL);
-  let getFileName =
-    oldEL.querySelector("[data-file-name]").dataset.fileName;
+  let getFileName = oldEL.querySelector("[data-file-name]").dataset.fileName;
   el.insertAdjacentHTML("afterend", AddFileHtml(getFileName));
   el.remove();
   console.log("el", el);
+}
+
+// tab click action
+
+function tabActiveHandel(el) {
+  el.classList.add("active");
+  let getId = document.querySelector(`${el.dataset.bsTarget}`);
+  getId.classList.add("active");
+
+  console.log("el, ", getId);
 }
