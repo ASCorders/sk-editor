@@ -38,7 +38,7 @@
             <ul class="editor-tab-list" id="editor-tab-list" role="tablist">
               <li class="nav-item" ondblclick="renameFile(this)">
                 <button
-                  class="nav-link"
+                  class="nav-link active"
                   id="index-tab"
                   data-bs-target="#index"
                   type="button"
@@ -56,7 +56,7 @@
               </li>
               <li class="nav-item" ondblclick="renameFile(this)">
                 <button
-                  class="nav-link active"
+                  class="nav-link"
                   id="indexjs-tab"
                   data-bs-target="#indexjs"
                   type="button"
@@ -97,8 +97,8 @@
       </aside>
       <section class="editor-file-wrapper">
         <div class="editor-content-wrapper">
-          <div class="content-header">
-            <button onclick="tabActiveHandel(this)">
+          <div class="content-header" id="content-header">
+            <button onclick="tabActiveHandel(this)" class="active">
               <img
                 src="./images/css-3.png"
                 alt="file-plus"
@@ -108,7 +108,7 @@
                 style.css</span
               >
             </button>
-            <button class="active" onclick="tabActiveHandel(this)">
+            <button class="" onclick="tabActiveHandel(this)">
               <img
                 src="./images/css-3.png"
                 alt="file-plus"
@@ -129,10 +129,10 @@
               >
             </button>
           </div>
-          <div class="editor-content" id="index">
+          <div class="editor-content active" id="index">
             <h5>1</h5>
           </div>
-          <div class="editor-content active" id="css">
+          <div class="editor-content" id="css">
             <h5>2</h5>
           </div>
           <div class="editor-content" id="indexjs">

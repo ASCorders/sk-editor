@@ -39,6 +39,24 @@ function renameFile(el) {
 // tab click action
 
 function tabActiveHandel(el) {
+  let getActiveTabHeader = document.querySelector(
+    "#content-header button.active"
+  );
+  let getActiveTabListing = document.querySelector(
+    "#editor-tab-list button.active"
+  );
+  let getContentActive = document.querySelector("editor-content.active");
+
+  if (getActiveTabHeader) {
+    getActiveTabHeader.classList.remove("active");
+  }
+  if (getActiveTabListing) {
+    getActiveTabListing.classList.remove("active");
+  }
+
+  if (getContentActive) {
+    getContentActive.classList.remove("active");
+  }
   el.classList.add("active");
   let getId = document.querySelector(`${el.dataset.bsTarget}`);
   getId.classList.add("active");
